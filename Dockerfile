@@ -11,4 +11,4 @@ COPY . /var/www/html
 # COPY custom-php.ini /usr/local/etc/php/conf.d/
 
 # Expose port (default already)
-EXPOSE 80
+EXPOSE 999
