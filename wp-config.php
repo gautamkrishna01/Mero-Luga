@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', env('DB_NAME', 'ecommerce') );
+define( 'DB_NAME', getenv('DB_NAME') !== false ? getenv('DB_NAME') : 'ecommerce' );
 
 /** Database username */
-define( 'DB_USER', env('DB_USER', 'root') );
+define( 'DB_USER', getenv('DB_USER') !== false ? getenv('DB_USER') : 'root');
 
 /** Database password */
-define( 'DB_PASSWORD', env('DB_PASSWORD', '') );
+define( 'DB_PASSWORD', getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : 'password');
 
 /** Database hostname */
-define( 'DB_HOST', env('DB_HOST', 'localhost') );
+define( 'DB_HOST', getenv('DB_HOST') !== false ? getenv('DB_HOST') : 'localhost');
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
