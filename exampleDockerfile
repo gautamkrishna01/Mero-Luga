@@ -1,0 +1,6 @@
+# Use official WordPress image
+FROM wordpress:latest
+
+COPY . /var/www/html
+
+EXPOSE 999
